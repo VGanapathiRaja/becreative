@@ -1,0 +1,78 @@
+.contactus{
+       padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: #f6f6f6;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+}
+.conatctform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-part {
+    width: 600px;
+    padding: 50px 20px;
+}
+.left-part h1{
+    font-size: 56px;
+    padding: 10px;
+    color: blueviolet;
+}
+.left-part p{
+    padding: 10px;
+}
+
+.right-part{
+    width: 600px;
+    padding: 50px 20px;
+}
+.right-part .inputs input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 5px;
+    color: blueviolet;
+    border-color: #e72f66;
+}
+.right-part .fullname{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-part textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 5px;
+    color: blueviolet;
+    border-color: #e72f66;
+}
+.right-part button{
+    padding: 10px 50px;
+    margin: 10px 5px;
+    border: 2px solid #575555;
+    border-color: #fc316e;
+    color: #fc316e !important;
+}
+.right-part button:hover{
+    background-color: #fc316e;
+    color: #fff !important;
+     border-color: #e72f66;
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+    
+    .conatctform{
+        display: block;
+    }
+    .right-part,.left-part{
+        width: inherit;
+    }
+    .left-part h1{
+        font-size: 28px;
+    }
+    .right-part .fullname{
+        display: block;
+    }
+}
