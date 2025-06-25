@@ -24,7 +24,7 @@ const handleSubmit = async (e)=>{
     }
 
     try{
-        await axios.post('http://localhost:8080/customer',user)
+        await axios.post(process.env.REACT_PORT_URL,user)
         alert('data succefully inserted');
         setUsers({fullname:'', email: '',subject: '',messages: ''})
     }
